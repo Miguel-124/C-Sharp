@@ -120,11 +120,11 @@ namespace TicTacToe
                 Button_2_2.Background = Brushes.Green;
                 return true;
             }
-            if (Button_0_2.Content != string.Empty && Button_0_2.Content == Button_1_1.Content && Button_1_1.Content == Button_2_0.Content)
+            if (Button_0_2.Content != string.Empty && Button_2_0.Content == Button_1_1.Content && Button_1_1.Content == Button_0_2.Content)
             {
-                Button_2_2.Background = Brushes.Green;
-                Button_1_1.Background = Brushes.Green;
                 Button_2_0.Background = Brushes.Green;
+                Button_1_1.Background = Brushes.Green;
+                Button_0_2.Background = Brushes.Green;
                 return true;
             }
             return false;
